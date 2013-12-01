@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Design By Humans</title>
+<meta name="viewport" content="width=device-width,initial-scale-1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="phonegap.js"></script>
+<script src="js/global.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="a" role="banner">
+    		<h1 class="ui-title" role="heading">Design By Humans</h1>
+            <a class="ui-btn-left" data-icon="home" href="#home">home</a>
+            <a class="ui-btn-right" data-icon="check" href="#login" data-rel="popup" data-position-to="window" data-role="button">login</a>
+    	</div>
+        <div data-role="navbar" data-theme="a" role="banner">
+        	<ul>
+            	<li><a href="#men">gentlemen</a></li>
+               	<li><a href="#women">damsels</a></li>
+            </ul>
+        </div>
+    
+    	<div data-role="content">
+        	<div id="homescrn">
+        		<img id="logo" src="images/logo.png" alt="DBH">
+        		<p>buy tees. get noticed. be human.</p>
+                <div id="break"></div>
+                <h4 align="left">fresh off the market</h4>
+                <img id="new" src="images/new.jpg" alt="just in">
+            </div>
+    	</div>
+    
+    	<div data-role="footer" data-theme="a" data-position="fixed">
+    		<nav data-role="navbar">
+        		<ul>
+            		<li><a href="#sizes" data-icon="info" data-rel="popup" data-position-to="window" data-role="button">size chart</a></li>
+                	<li><a href="#cart" data-icon="edit" data-rel="popup" data-position-to="window" data-role="button">your cart</a></li>
+            	</ul>
+        	</nav>
+    	</div>
+        
+        <div data-role="popup" id="sizes" data-theme="c" class="ui-corner-all">
+        	<div id="size">
+        		<h5>all measurements are in human shape</h5>
+        		<img src="images/size.png" alt="size chart">
+            	<div id="minibreak"></div>
+            	<img src="images/sizes.png" alt="size chart">
+           	</div>
+        </div>
+        
+        <div data-role="popup" id="login" data-theme="c" class="ui-corner-all">
+        	<div class="login">
+        		<h3>whats your design?</h3>
+        		<form>
+        			<label for="un" class="ui-hidden-accessible">Username:</label>
+        			<input type="text" name="user" id="un" value="" placeholder="user" data-theme="a">
+        			<label for="pw" class="ui-hidden-accessible">Password:</label>
+        			<input type="password" name="pass" id="pw" value="" placeholder="pass" data-theme="a">
+        			<button type="submit" data-theme="a" data-icon="check">login</button>
+                    <div id="minibreak"></div>
+        			<a href="#">forgotten</a> - <a href="#">i'm new</a>
+    			</form>
+           	</div>
+        </div>
+        
+        <div data-role="popup" id="cart" data-theme="c" class="ui-corner-all">
+        	<div class="login">
+        		<h3 align="left">your finds</h3>
+				<div id="minibreak"></div>
+                <h2>D:</h2>
+                <h4>empty!<br>its so lonely in here.</h4>
+                <div id="minibreak"></div>
+                <a href="#">edit</a> | <a href="#">empty</a> | <a href="#">buy</a>
+           	</div>
+        </div>
+    
+</div>
+
+<div data-role="page" id="men">
+	<div data-role="header" data-theme="a" role="banner">
+    	<h1 class="ui-title" role="heading">Design By Humans</h1>
+        <a class="ui-btn-left" data-icon="home" href="#home">home</a>
+    	<a class="ui-btn-right" data-icon="check" href="#login" data-rel="popup" data-position-to="window" data-role="button">login</a>
+    </div>
+    <div data-role="content">
+    	<h2>designs for gents</h2> 
+		<div data-role="collapsible-set" data-theme="a">
+        	<div data-role="collapsible" id="tshirt">
+            	<h3>ambush</h3>
+					<img id="tee" src="images/m01.jpg" alt="tee">
+                    <a id="shirt" href="#" role="button" data-theme="a">sml</a>|<a id="shirt" href="#" role="button" data-theme="a">med</a>|
+<a id="shirt" href="#" role="button" data-theme="a">lrg</a>
+                	<h2>$24.00</h2>
+                    <p>always when you least expect it.<br>Dan Cohen | DBH</p>
+                	<form>
+                    	<button type="submit" data-theme="a" data-icon="plus">add to cart</button>
+                    </form>
+            </div>
+            <div data-role="collapsible" id="tshirt">
+            	<h3>breathe</h3>
+					<img id="tee" src="images/m02.jpg" alt="tee">
+                    <a id="shirt" href="#" role="button" data-theme="a">sml</a>|<a id="shirt" href="#" role="button" data-theme="a">med</a>|
+<a id="shirt" href="#" role="button" data-theme="a">lrg</a>
+                	<h2>$24.00</h2>
+                    <p>drink it all in.<br>Dan Cohen | DBH</p>
+                	<form>
+                    	<button type="submit" data-theme="a" data-icon="plus">add to cart</button>
+                    </form>
+            </div>
+            <div data-role="collapsible" id="tshirt">
+            	<h3>the dark officer</h3>
+					<img id="tee" src="images/m03.jpg" alt="tee">
+                    <a id="shirt" href="#" role="button" data-theme="a">sml</a>|<a id="shirt" href="#" role="button" data-theme="a">med</a>|
+<a id="shirt" href="#" role="button" data-theme="a">lrg</a>
+                	<h2>$24.00</h2>
+                    <p>present your papers, please.<br>Dan Cohen | DBH</p>
+                	<form>
+                    	<button type="submit" data-theme="a" data-icon="plus">add to cart</button>
+                    </form>
+            </div>
+             <div data-role="collapsible" id="tshirt">
+            	<h3>a challenger</h3>
+					<img id="tee" src="images/m04.jpg" alt="tee">
+                    <a id="shirt" class="ui" href="#" role="button" data-theme="a">sml</a>|<a id="shirt" href="#" role="button" data-theme="a">med</a>|
+<a id="shirt" href="#" role="button" data-theme="a">lrg</a>
+                	<h2>$24.00</h2>
+                    <p>you don't make it in the end.<br>Dan Cohen | DBH</p>
+                	<form>
+                    	<button type="submit" data-theme="a" data-icon="plus">add to cart</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+        	<div data-role="footer" data-theme="a" data-position="fixed">
+    		<nav data-role="navbar">
+        		<ul>
+            		<li><a href="#sizes" data-icon="info" data-rel="popup" data-position-to="window" data-role="button">size chart</a></li>
+                	<li><a href="#cart" data-icon="edit" data-rel="popup" data-position-to="window" data-role="button">your cart</a></li>
+            	</ul>
+        	</nav>
+    	</div>
+        
+        <div data-role="popup" id="sizes" data-theme="c" class="ui-corner-all">
+        	<div id="size">
+        		<h5>all measurements are in human shape</h5>
+        		<img src="images/size.png" alt="size chart">
+            	<div id="minibreak"></div>
+            	<img src="images/sizes.png" alt="size chart">
+           	</div>
+        </div>
+        
+        <div data-role="popup" id="login" data-theme="c" class="ui-corner-all">
+        	<div class="login">
+        		<h3>whats your design?</h3>
+        		<form>
+        			<label for="un" class="ui-hidden-accessible">Username:</label>
+        			<input type="text" name="user" id="un" value="" placeholder="user" data-theme="a">
+        			<label for="pw" class="ui-hidden-accessible">Password:</label>
+        			<input type="password" name="pass" id="pw" value="" placeholder="pass" data-theme="a">
+        			<button type="submit" data-theme="a" data-icon="check">login</button>
+                    <div id="minibreak"></div>
+        			<a href="#">forgotten</a> - <a href="#">i'm new</a>
+    			</form>
+           	</div>
+        </div>
+        
+        <div data-role="popup" id="cart" data-theme="c" class="ui-corner-all">
+        	<div class="login">
+        		<h3 align="left">your finds</h3>
+				<div id="minibreak"></div>
+                <h2>D:</h2>
+                <h4>empty!<br>its so lonely in here.</h4>
+                <div id="minibreak"></div>
+                <a href="#">edit</a> | <a href="#">empty</a> | <a href="#">buy</a>
+           	</div>
+        </div>
+</div>
+
+<div data-role="page" id="women">
+	<div data-role="header" data-theme="a" role="banner">
+    	<h1 class="ui-title" role="heading">Design By Humans</h1>
+        <a class="ui-btn-left" data-icon="home" href="#home">home</a>
+    	<a class="ui-btn-right" data-icon="check" href="#login" data-rel="popup" data-position-to="window" data-role="button">login</a>
+    </div>
+    <div data-role="content">
+    	<h2>designs for dames</h2> 
+		<div data-role="collapsible-set" data-theme="a">
+        	<div data-role="collapsible" id="tshirt">
+            	<h3>black rose</h3>
+					<img id="tee" src="images/w01.jpg" alt="tee">
+                    <a id="shirt" href="#" role="button" data-theme="a">sml</a>|<a id="shirt" href="#" role="button" data-theme="a">med</a>|
+<a id="shirt" href="#" role="button" data-theme="a">lrg</a>
+                	<h2>$24.00</h2>
+                    <p>it comes in many forms.<br>Dan Cohen | DBH</p>
+                	<form>
+                    	<button type="submit" data-theme="a" data-icon="plus">add to cart</button>
+                    </form>
+            </div>
+            <div data-role="collapsible" id="tshirt">
+            	<h3>controlling transmission</h3>
+					<img id="tee" src="images/w02.jpg" alt="tee">
+                    <a id="shirt" href="#" role="button" data-theme="a">sml</a>|<a id="shirt" href="#" role="button" data-theme="a">med</a>|
+<a id="shirt" href="#" role="button" data-theme="a">lrg</a>
+                	<h2>$24.00</h2>
+                    <p>see no evil. hear no evil. <br>spk no evil.<br>Dan Cohen | DBH</p>
+                	<form>
+                    	<button type="submit" data-theme="a" data-icon="plus">add to cart</button>
+                    </form>
+            </div>
+            <div data-role="collapsible" id="tshirt">
+            	<h3>last goodbye</h3>
+					<img id="tee" src="images/w03.jpg" alt="tee">
+                    <a id="shirt" href="#" role="button" data-theme="a">sml</a>|<a id="shirt" href="#" role="button" data-theme="a">med</a>|
+<a id="shirt" href="#" role="button" data-theme="a">lrg</a>
+                	<h2>$24.00</h2>
+                    <p>i have become death.<br>Dan Cohen | DBH</p>
+                	<form>
+                    	<button type="submit" data-theme="a" data-icon="plus">add to cart</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+        	<div data-role="footer" data-theme="a" data-position="fixed">
+    		<nav data-role="navbar">
+        		<ul>
+            		<li><a href="#sizes" data-icon="info" data-rel="popup" data-position-to="window" data-role="button">size chart</a></li>
+                	<li><a href="#cart" data-icon="edit" data-rel="popup" data-position-to="window" data-role="button">your cart</a></li>
+            	</ul>
+        	</nav>
+    	</div>
+        
+        <div data-role="popup" id="sizes" data-theme="c" class="ui-corner-all">
+        	<div id="size">
+        		<h5>all measurements are in human shape</h5>
+        		<img src="images/size.png" alt="size chart">
+            	<div id="minibreak"></div>
+            	<img src="images/sizes.png" alt="size chart">
+           	</div>
+        </div>
+        
+        <div data-role="popup" id="login" data-theme="c" class="ui-corner-all">
+        	<div class="login">
+        		<h3>whats your design?</h3>
+        		<form>
+        			<label for="un" class="ui-hidden-accessible">Username:</label>
+        			<input type="text" name="user" id="un" value="" placeholder="user" data-theme="a">
+        			<label for="pw" class="ui-hidden-accessible">Password:</label>
+        			<input type="password" name="pass" id="pw" value="" placeholder="pass" data-theme="a">
+        			<button type="submit" data-theme="a" data-icon="check">login</button>
+                    <div id="minibreak"></div>
+        			<a href="#">forgotten</a> - <a href="#">i'm new</a>
+    			</form>
+           	</div>
+        </div>
+        
+        <div data-role="popup" id="cart" data-theme="c" class="ui-corner-all">
+        	<div class="login">
+        		<h3 align="left">your finds</h3>
+				<div id="minibreak"></div>
+                <h2>D:</h2>
+                <h4>empty!<br>its so lonely in here.</h4>
+                <div id="minibreak"></div>
+                <a href="#">edit</a> | <a href="#">empty</a> | <a href="#">buy</a>
+           	</div>
+        </div>
+</div>
+
+</body>
+</html>
